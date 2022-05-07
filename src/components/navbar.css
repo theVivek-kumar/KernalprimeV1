@@ -1,0 +1,44 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+  --PRIMERY-color:#1d9bf0 ;
+  --WHITE: #ffffff;
+}
+.logo-image{
+    width: 5rem;
+    height: auto;
+
+}
+.logo-heading{
+    color: rgb(85, 85, 85);
+    font-size: 2.8rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+.navbar-logo-title-container{
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    margin-left: 3rem;
+    font-size: 4rem;
+    color: var(--WHITE);
+}
+.navbar-Fabar{
+  align-items: center;
+  margin-top: .8rem;
+  font-size: 3.2rem;
+  color: var(--WHITE);
+}
+.navbar-logo-maindiv-md{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-side-section{
+    display: flex;
+    font-size: 3.8rem;
+    gap: 2rem;
+    color: azure;
+    align-items: center;
+    margin-right: 2rem;
+}

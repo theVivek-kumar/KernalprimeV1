@@ -1,0 +1,31 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.logo-image{
+    width: 5rem;
+    height: auto;
+
+}
+.logo-heading{
+    color: azure;
+    font-size: 3rem;
+}
+.navbar-logo-title-container{
+    display: flex;
+    align-content: center;
+    margin-left: 3rem;
+    font-size: 4rem;
+    color: rgb(255, 204, 0);
+}
+.navbar-logo-maindiv-md{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-side-section{
+    display: flex;
+    font-size: 3.8rem;
+    gap: 2rem;
+    color: azure;
+    align-items: center;
+    margin-right: 2rem;
+}
