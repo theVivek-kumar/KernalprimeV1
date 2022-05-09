@@ -5,7 +5,8 @@ import { MdExplore,MdPlaylistPlay ,MdOutlineWatchLater,MdSlowMotionVideo } from 
 import Card from './Videocard';
 import CategoryCard from './categorisCard';
 import VideoListing from '../page/videoListing';
-import HeroSection from './heroSection';
+import  HeroSection from'../components/heroSection'
+import CardFeature from './featureCard';
 function AsideBar() {
     return (
     <div class="main-hero-section">
@@ -21,17 +22,13 @@ function AsideBar() {
             </ul>
         </div>
             <div class="hero-section-wrapper">
-                <HeroSection/>
+                <  HeroSection/>
                 <div>
                 <CategoryCard/>
                 </div>
-                 <div className='card-section'>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card/>
+                <div className='card-section'>
+                    <CardFeature/>
                 </div>
-               
                 </div>
                 
             

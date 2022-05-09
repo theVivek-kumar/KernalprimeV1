@@ -3,13 +3,16 @@ import AsideBar from '../components/asideBar'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
 
+
 function VideoListing() {
+  
   return (
       <>
           <Navbar />
-          <SideMenu/>
+          <SideMenu />
+     
       </>
   )
 }
 
-export default VideoListing
+export default VideoListing 
