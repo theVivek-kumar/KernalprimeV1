@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaBars, FaHome, FaHistory } from 'react-icons/fa';
-import { useVideoListing } from '../components/context/videoListingContext'
+import { useVideoListing } from '../context/videoListingContext'
 import Card from '../components/Videocard'
 import { AiFillLike } from 'react-icons/ai';
 import { MdExplore,MdPlaylistPlay ,MdOutlineWatchLater,MdSlowMotionVideo } from 'react-icons/md';

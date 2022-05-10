@@ -71,7 +71,7 @@
     margin-top: .2rem;
     display: grid;
     grid-template-columns: .56fr 4.5fr;
-    height: 110vh;
+    height: auto;
 }
 .bar-bar1{
   width: auto;
@@ -218,4 +218,14 @@
 .Video-listing{
   display: flex;
   flex-wrap: wrap;
+}
+/****************singlevideoPage****************/
+.main-content-wrapper-singleVideo{
+  height: 100vh;
+
+}
+.singleVideo{
+  width: 100rem;
+  height: auto;
+  margin: 4rem;
 }
