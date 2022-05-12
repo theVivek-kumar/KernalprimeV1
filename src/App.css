@@ -55,14 +55,15 @@
 }
 /************side-menu*************/
 .aside-list-icons{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 3rem;
- list-style: none;
- font-size: 3rem;
- color: var(--PRIMERY-color);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+margin-left: 7rem; 
+list-style: none;
+font-size: 3rem;
+color: var(--PRIMERY-color);
 }
 .icons-bar{
   font-size: 5rem;
@@ -70,7 +71,7 @@
 .main-hero-section{
     margin-top: .2rem;
     display: grid;
-    grid-template-columns: .56fr 4.5fr;
+    grid-template-columns: .56fr 4.5fr; 
     height: auto;
 }
 .bar-bar1{
@@ -228,4 +229,8 @@
   width: 100rem;
   height: auto;
   margin: 4rem;
+}
+.main-section-wrapper{
+display: grid;
+grid-template-columns: 17rem 1fr;
 }
