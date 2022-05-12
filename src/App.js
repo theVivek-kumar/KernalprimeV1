@@ -1,5 +1,5 @@
 import "./App.css";
-import MockAPI from './mockman/MockAPI'
+// import MockAPI from './mockman/MockAPI'
 import {Routes,Route} from 'react-router-dom';
 import "./components/navbar.css"
 import LandingPage from "./page/landingPage";
