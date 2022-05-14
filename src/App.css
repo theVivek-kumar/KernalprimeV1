@@ -106,6 +106,7 @@ color: var(--PRIMERY-color);
     padding: 1.5rem;
 }
 .card-image-md{
+  
     width: 30rem;
     height: auto;
 }
@@ -233,4 +234,13 @@ color: var(--PRIMERY-color);
 .main-section-wrapper{
 display: grid;
 grid-template-columns: 17rem 1fr;
+}
+.duration-label {
+    position: relative;
+    background-color: #222222d8;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    bottom: 11px;
+    right: 40px;
 }

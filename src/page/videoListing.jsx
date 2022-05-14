@@ -23,6 +23,9 @@ function VideoListing() {
                         <Card key={video._id} title={video.title}
                             creator=
                             {video.creator}
+                            _id={video._id}
+                            description={video.description}
+                            duration={video. duration}
                             creater_img={video.creater_img}
                             thumbnailUrl={video.thumbnailUrl}
                             category={video.category}
