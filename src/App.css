@@ -65,8 +65,10 @@ list-style: none;
 font-size: 3rem;
 color: var(--PRIMERY-color);
 }
+
 .icons-bar{
   font-size: 5rem;
+  color: var(--PRIMERY-color);
 }
 .main-hero-section{
     margin-top: .2rem;
@@ -103,7 +105,14 @@ color: var(--PRIMERY-color);
     flex-direction: column;
     font-size: 2.5rem;
     color: var(--WHITE);
-    padding: 1.5rem;
+    padding: 1.8rem;
+}
+.card-main-container:hover{
+  transform: scale(1.02);
+  z-index: 50;
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0px 0px 10px var(--PRIMERY-color);
 }
 .card-image-md{
   
@@ -118,12 +127,18 @@ color: var(--PRIMERY-color);
 .card-discription-md{
   max-width: 30rem;
   display: flex;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 .card-likes-views-md{
     display: flex;
-    gap: 3rem;
-    font-size: 1.8rem;
+    gap: 8rem;
+    font-size: 2rem;
+}
+.single-video-icons{
+  display: flex;
+  gap: 3rem;
+  font-size: 4rem;
 }
 .chennel-logo-img{
   width: 4rem;
@@ -229,7 +244,8 @@ color: var(--PRIMERY-color);
 .singleVideo{
   width: 100rem;
   height: auto;
-  margin: 4rem;
+  margin-left: 10rem;
+
 }
 .main-section-wrapper{
 display: grid;
@@ -241,6 +257,35 @@ grid-template-columns: 17rem 1fr;
     color: white;
     padding: 3px 5px;
     border-radius: 5px;
-    bottom: 11px;
-    right: 40px;
+    bottom: 30px;
+    right: -252px;
+    width: 42px;
+}
+.seperation-line{
+  width: 900px;
+  background-color: var(--GRAY-20);
+  height: 1px;
+  margin-top: 4rem;
+}
+.description{
+  margin-top: 2rem;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  width: 900px;
+}
+.single-video-card-container{
+  max-width: 900px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-main-container-singlevideo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 2.5rem;
+    color: var(--WHITE);
+    padding: 1.8rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
 }

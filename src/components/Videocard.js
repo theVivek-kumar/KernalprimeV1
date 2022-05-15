@@ -21,11 +21,12 @@ function Card({
         <div class="card-main-container">
           <img
             onClick={() => {
+              
               navigate(`/singleVideoPage/${_id}`);
             }}
             class="card-image-md"
             src={thumbnailUrl}
-          />{" "}
+          />
           <span className="duration-label">{duration} </span>
           <div class="card-discription-md">{title}</div>
           <div class="card-likes-views-md">

@@ -13,7 +13,7 @@ function AsideBar() {
                 <CategoryCard/>
                 </div>
                 <div className='card-section'>
-                <CardFeature/>
+              
                 </div>
                 </div>
                 
