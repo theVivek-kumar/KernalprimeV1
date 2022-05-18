@@ -4,6 +4,7 @@ import { useHistoryContext } from "../context/Historycontext";
 import { AiFillLike,AiFillDislike } from 'react-icons/ai';
 import { MdPlaylistPlay, MdOutlineWatchLater } from 'react-icons/md';
 import {useWatchLaterContext} from '../context/Watch-later'
+import { UseLikeVideoContext } from "../context/LikeVideoContext";
 function Card({
   _id,
   title,
@@ -24,6 +25,7 @@ function Card({
     watchLater,
     addToWatchLater,
     removeFromWatchLater } = useWatchLaterContext();
+    const { addToLikeVideo,setLikeVideo } = UseLikeVideoContext();
   return (
     <>
       <div class="Card-main-wrapper">
@@ -38,8 +40,8 @@ function Card({
           />
           <span className="duration-label">{duration} </span>
            <div className="single-video-icons">
-                <AiFillLike />
-                <AiFillDislike/>
+                <AiFillLike onClick={()=>{addToLikeVideo(videos, setLikeVideo)}} />
+                <AiFillDislike />
                 <MdPlaylistPlay />
             <MdOutlineWatchLater onClick={() => {addToWatchLater(videos, setWatchLater) 
             

@@ -6,8 +6,8 @@ import { UseLikeVideoContext } from '../context/LikeVideoContext'
 
 
 function LikeVideoPage() {
-    const { setLikeVideo, getLikeVideo, addToLikeVideo, removeFromLikeVideo, clearLikedVideos, likeVideo } = useWatchLaterContext();
-    console.log(likeVideo,"this is lie video")
+    const { setLikeVideo, getLikeVideo, addToLikeVideo, removeFromLikeVideo, clearLikedVideos, likeVideo } = UseLikeVideoContext();
+    console.log(likeVideo,"this is like video")
   return (
       <>
            <Navbar />
