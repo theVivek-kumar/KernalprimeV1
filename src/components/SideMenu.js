@@ -14,8 +14,8 @@ return (
                 <NavLink to='/videoListing'><li className='icons-bar'> <MdExplore/></li></NavLink>
                 <li className='icons-bar'> <MdPlaylistPlay /> </li>
                 <NavLink to='/watchLater'><li className='icons-bar'> <MdOutlineWatchLater /> </li></NavLink>
-                <li className='icons-bar'> <FaHistory/> </li>
-                <li className='icons-bar'> <AiFillLike /> </li>
+                <NavLink to ='/historyPage'><li className='icons-bar'> <FaHistory/> </li></NavLink>
+                <NavLink to="/LikeVideo"> <li className='icons-bar'> <AiFillLike /> </li></NavLink>
                 <li className='icons-bar'> <MdSlowMotionVideo/> </li>
             </ul>
         </div>

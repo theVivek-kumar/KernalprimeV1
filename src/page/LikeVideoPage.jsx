@@ -1,26 +1,25 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
-import Card from '../components/Videocard';
-import { useWatchLaterContext } from '../context/Watch-later'
+import Card from '../components/Videocard'
+import { UseLikeVideoContext } from '../context/LikeVideoContext'
 
-function WatchLaterpage() {
-  const { setWatchLater,
-    watchLater,
-    addToWatchLater,
-    removeFromWatchLater } = useWatchLaterContext();
-    return (
+
+function LikeVideoPage() {
+    const { setLikeVideo, getLikeVideo, addToLikeVideo, removeFromLikeVideo, clearLikedVideos, likeVideo } = useWatchLaterContext();
+    console.log(likeVideo,"this is lie video")
+  return (
       <>
-        <Navbar />
+           <Navbar />
         <div className='main-section-wrapper'>
           <SideMenu />
           <div class="hero-section-wrapper">
               <div className="main-section-heading-center">
-              Watch Later {watchLater.length}
+              Watch Later {likeVideo.length}
             </div>
               <div className='Video-listing'>
                 {
-                    watchLater.map((video) => (
+                    likeVideo.map((video) => (
                         <Card key={video._id} title={video.title}
                             creator=
                             {video.creator}
@@ -47,9 +46,8 @@ function WatchLaterpage() {
 
           </div>          
           </div>
-        
-            </>
+      </>
   )
 }
 
-export default WatchLaterpage
+export default LikeVideoPage

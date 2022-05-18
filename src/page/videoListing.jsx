@@ -3,20 +3,30 @@ import Chip from '../components/chipComponent'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
 import Card from '../components/Videocard'
-import { useVideoListing } from '../context/videoListingContext'
+import { useVideoListing } from '../context/videoListingContext';
 
+function VideoListing({
 
-
-function VideoListing() {
+})
+{
+    
    const { videoList } = useVideoListing() 
-  
   return (
       <>
       <Navbar />
       <div className='main-section-wrapper'>
         <SideMenu />
-         <div class="hero-section-wrapper">
-            <Chip />
+              <div class="hero-section-wrapper">
+              
+                    
+                
+                        <Chip 
+                           
+                            />
+      
+                  
+             
+                 
             <div className='Video-listing'>
                 {
                     videoList.map((video) => (
@@ -24,6 +34,7 @@ function VideoListing() {
                             creator=
                             {video.creator}
                             _id={video._id}
+                            videos={video}
                             description={video.description}
                             duration={video. duration}
                             creater_img={video.creater_img}
@@ -34,6 +45,7 @@ function VideoListing() {
                             isLiked={video.isLiked}
                             watchLater={video.watchLater}
                             video_id={video.video_id}
+                            old={video.old}
                             />
         ))
         

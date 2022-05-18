@@ -2,19 +2,27 @@
 import { AiOutlineHistory } from "react-icons/ai";
 import SideMenu from "../components/SideMenu";
 import Navbar from "../components/navbar";
+import { useHistoryContext } from '../context/Historycontext'
+import Card from "../components/Videocard";
+
 
 function HistoryPage() {
-  const { history, clearHistory } = useHistoryContext();
-
+  const { history, setHistory, getHistory,
+        addToHistory,
+        removeFromHistory,
+        clearHistory,
+       } = useHistoryContext();
+  console.log(history,"this is from history page")
   return (
     <div>
           <div className="body-section">
-            <Navbar/>
-        <SideMenu />
+        <Navbar />
+         <div className='main-section-wrapper'>
+          <SideMenu />
+           <div class="hero-section-wrapper">
         <section className="cards">
           <h3 className="main-section-heading">
             <div className="main-section-heading-center">
-              <AiOutlineHistory />
               Watch History {history.length}
             </div>
             <div>
@@ -23,12 +31,30 @@ function HistoryPage() {
               </button>
             </div>
           </h3>
-          <div className="card--container">
-            {history?.map((video) => (
-              <CardHorizontal key={video._id} video={video} />
-            ))}
+            <div className='Video-listing'>
+                
+             {history.map((video) => (
+                        <Card key={video._id} title={video.title}
+                            creator=
+                            {video.creator}
+                            _id={video._id}
+                            description={video.description}
+                            duration={video. duration}
+                            creater_img={video.creater_img}
+                            thumbnailUrl={video.thumbnailUrl}
+                            category={video.category}
+                            videoUrl={video.videoUrl}
+                            views={video.views}
+                            isLiked={video.isLiked}
+                            watchLater={video.watchLater}
+                            video_id={video.video_id}
+                            />
+             ))}
+              
           </div>
-        </section>
+            </section>
+            </div>
+          </div>
       </div>
     </div>
   );
