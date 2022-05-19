@@ -15,7 +15,7 @@ return (
                     </div>
             <div className="navbar-side-section">
             <div><FaUserCircle/></div> 
-            <div><BiLogInCircle/></div>  
+            <div >< BiLogInCircle/></div>  
             </div>
         </div>
         
