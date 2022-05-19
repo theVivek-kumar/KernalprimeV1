@@ -6,7 +6,7 @@ import LandingPage from "./page/landingPage";
 import SingleVideoPage from "./page/SingleVideoPage";
 import VideoListing from "./page/videoListing";
 import WatchLaterpage from "./page/WatchLaterpage";
-import { HistoryPage } from "./page/History-page";
+import  HistoryPage  from "./page/History-page";
 import LikeVideoPage from "./page/LikeVideoPage";
 function App() {
   return (

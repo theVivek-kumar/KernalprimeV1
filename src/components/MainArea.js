@@ -10,7 +10,6 @@ function MainArea() {
   const { videoId } = useParams();
   const { videoList } = useVideoListing();
   const filteredVideo = videoList.filter((video) => video._id === videoId);
-  // const {video} = undefined || {};
   const {
    _id ,
     old,

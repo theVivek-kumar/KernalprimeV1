@@ -60,4 +60,4 @@ function HistoryPage() {
   );
 }
 
-export { HistoryPage };
+export  default  HistoryPage ;

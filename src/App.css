@@ -2,7 +2,7 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 :root{
-  --PRIMERY-color:#1d9bf0 ;
+  --PRIMERY-COLOR:#1d9bf0 ;
   --WHITE: #ffffff;
   --GRAY-80: #333333;
   --GRAY-90: #222222;
@@ -11,7 +11,7 @@
   --GRAY-40: #8f8e8e;
   --GRAY-50: #7e7a7a;
   --GRAY-20: #C4C4C4;
-  --black-40:#131313;
+  --BLACK-40:#131313;
 }
 .logo-image{
     width: 5rem;
@@ -63,12 +63,12 @@ gap: 3rem;
 margin-left: 7rem; 
 list-style: none;
 font-size: 3rem;
-color: var(--PRIMERY-color);
+color: var(--PRIMERY-COLOR);
 }
 
 .icons-bar{
   font-size: 5rem;
-  color: var(--PRIMERY-color);
+  color: var(--PRIMERY-COLOR);
 }
 .main-hero-section{
     margin-top: .2rem;
@@ -85,7 +85,7 @@ color: var(--PRIMERY-color);
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: var(--black-40);
+    background-color: var(--BLACK-40);
     
 }
 .heroSsection-side-text{
@@ -112,7 +112,7 @@ color: var(--PRIMERY-color);
   z-index: 50;
   cursor: pointer;
   transition: .5s;
-  box-shadow: 0px 0px 10px var(--PRIMERY-color);
+  box-shadow: 0px 0px 10px var(--PRIMERY-COLOR);
 }
 .card-image-md{
   
@@ -257,7 +257,7 @@ grid-template-columns: 17rem 1fr;
     color: white;
     padding: 3px 5px;
     border-radius: 5px;
-    bottom: 30px;
+    bottom: 3rem;
     right: -252px;
     width: 42px;
 }
