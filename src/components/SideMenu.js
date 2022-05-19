@@ -1,50 +1,23 @@
 import React from 'react'
-import { FaBars, FaHome, FaHistory } from 'react-icons/fa';
-import { useVideoListing } from '../components/context/videoListingContext'
-import Card from '../components/Videocard'
+import { FaHome, FaHistory } from 'react-icons/fa';
+import { useVideoListing } from '../context/videoListingContext'
 import { AiFillLike } from 'react-icons/ai';
 import { MdExplore,MdPlaylistPlay ,MdOutlineWatchLater,MdSlowMotionVideo } from 'react-icons/md';
-import Chip from './chipComponent';
+import { NavLink } from 'react-router-dom';
 function SideMenu() {
-    const { videoList } = useVideoListing() 
-    console.log(videoList, "thi id jnjcdjd")
-    // const { video } = videoList
+    const { videoList } = useVideoListing()   
 return (
     <div class="main-hero-section">
         <div class="side-menu-cotainer">
             <ul className='aside-list-icons'>
-                <li className='icons-bar'> <FaHome/> </li>
-                <li className='icons-bar'> <MdExplore/></li>
+                <NavLink to = '/'><li className='icons-bar'> <FaHome/></li></NavLink>
+                <NavLink to='/videoListing'><li className='icons-bar'> <MdExplore/></li></NavLink>
                 <li className='icons-bar'> <MdPlaylistPlay /> </li>
-                <li className='icons-bar'> <MdOutlineWatchLater /> </li>
-                <li className='icons-bar'> <FaHistory/> </li>
-                <li className='icons-bar'> <AiFillLike /> </li>
+                <NavLink to='/watchLater'><li className='icons-bar'> <MdOutlineWatchLater /> </li></NavLink>
+                <NavLink to ='/historyPage'><li className='icons-bar'> <FaHistory/> </li></NavLink>
+                <NavLink to="/LikeVideo"> <li className='icons-bar'> <AiFillLike /> </li></NavLink>
                 <li className='icons-bar'> <MdSlowMotionVideo/> </li>
             </ul>
-        </div>
-        <div class="hero-section-wrapper">
-            <Chip />
-            <div className='Video-listing'>
-                {
-                    videoList.map((video) => (
-                        <Card key={video._id} title={video.title}
-                            creator=
-                            {video.creator}
-                            creater_img={video.creater_img}
-                            thumbnailUrl={video.thumbnailUrl}
-                            category={video.category}
-                            videoUrl={video.videoUrl}
-                            views={video.views}
-                            isLiked={video.isLiked}
-                            watchLater={video.watchLater}
-                            video_id={video.video_id}
-                            />
-        ))
-        
-                }
-                </div>
-
-
         </div>
         </div>
 )

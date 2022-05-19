@@ -47,7 +47,7 @@
 }
 .navbar-side-section{
     display: flex;
-    font-size: 3.8rem;
+    font-size:6rem;
     gap: 2rem;
     color:var(--WHITE);
     align-items: center;
@@ -55,23 +55,26 @@
 }
 /************side-menu*************/
 .aside-list-icons{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- gap: 3rem;
- list-style: none;
- font-size: 3rem;
- color: var(--PRIMERY-color);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+margin-left: 7rem; 
+list-style: none;
+font-size: 3rem;
+color: var(--PRIMERY-color);
 }
+
 .icons-bar{
   font-size: 5rem;
+  color: var(--PRIMERY-color);
 }
 .main-hero-section{
     margin-top: .2rem;
     display: grid;
-    grid-template-columns: .56fr 4.5fr;
-    height: 110vh;
+    grid-template-columns: .56fr 4.5fr; 
+    height: auto;
 }
 .bar-bar1{
   width: auto;
@@ -102,9 +105,17 @@
     flex-direction: column;
     font-size: 2.5rem;
     color: var(--WHITE);
-    padding: 1.5rem;
+    padding: 1.8rem;
+}
+.card-main-container:hover{
+  transform: scale(1.02);
+  z-index: 50;
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0px 0px 10px var(--PRIMERY-color);
 }
 .card-image-md{
+  
     width: 30rem;
     height: auto;
 }
@@ -116,12 +127,18 @@
 .card-discription-md{
   max-width: 30rem;
   display: flex;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 .card-likes-views-md{
     display: flex;
-    gap: 3rem;
-    font-size: 1.8rem;
+    gap: 8rem;
+    font-size: 2rem;
+}
+.single-video-icons{
+  display: flex;
+  gap: 3rem;
+  font-size: 4rem;
 }
 .chennel-logo-img{
   width: 4rem;
@@ -161,33 +178,33 @@
 }
 .hero-section-container{
   background-color: var(--GRAY-90);
-  height: 45%;
-  gap: 30%;
+  height: 50%;
+  gap: 25%;
   display: flex;
 }
-.btn-watchnow{
+.btn-watchnow {
   background-color: rgb(1, 221, 255);
-  margin-top: 3rem;
-  padding: .5rem;
+  width: 20%;
+  margin-top: 2rem;
+  padding: .6rem;
+  font-size: 2.5rem;
   border-radius: 5px;
 }
 /*********************************/
-.list-chip{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-.list-chip li{
+
+.btn-1 {
     background-color: #2c2c2c;
     padding: 1rem;
     border-radius: 3rem;
     margin: .8rem;
+    color: var(--WHITE)!important;
+    border-style: none;
     font-size: 1.3rem;
     border: 1px solid var(--GRAY-50);
 }
-.list-chip li:hover{
+.btn-1:hover{
   background-color: var(--WHITE);
-  color: var(--GRAY-100);
+  color: var(--GRAY-100)!important;
   font-weight: 500;
 }
 /*****search**/
@@ -218,4 +235,57 @@
 .Video-listing{
   display: flex;
   flex-wrap: wrap;
+}
+/****************singlevideoPage****************/
+.main-content-wrapper-singleVideo{
+  height: 100vh;
+
+}
+.singleVideo{
+  width: 100rem;
+  height: auto;
+  margin-left: 10rem;
+
+}
+.main-section-wrapper{
+display: grid;
+grid-template-columns: 17rem 1fr;
+}
+.duration-label {
+    position: relative;
+    background-color: #222222d8;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    bottom: 30px;
+    right: -252px;
+    width: 42px;
+}
+.seperation-line{
+  width: 900px;
+  background-color: var(--GRAY-20);
+  height: 1px;
+  margin-top: 4rem;
+}
+.description{
+  margin-top: 2rem;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  width: 900px;
+}
+.single-video-card-container{
+  max-width: 900px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card-main-container-singlevideo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 2.5rem;
+    color: var(--WHITE);
+    padding: 1.8rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
 }

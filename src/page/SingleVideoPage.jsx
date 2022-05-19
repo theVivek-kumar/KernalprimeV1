@@ -3,13 +3,18 @@ import MainArea from '../components/MainArea'
 import Navbar from '../components/navbar'
 
 
+
 function SingleVideoPage() {
+
     return (
-      <>
+    <>
             <Navbar />
-            <MainArea/>
+           
+            <MainArea />
+            
+            
             </>
-  )
+)
 }
 
 export default SingleVideoPage

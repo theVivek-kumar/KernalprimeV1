@@ -1,35 +1,26 @@
 import React from 'react'
-import Chip from '../components/chipComponent'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
-import Card from '../components/Videocard'
-import { useVideoListing } from '../context/videoListingContext';
+import Card from '../components/Videocard';
+import { useWatchLaterContext } from '../context/Watch-later'
 
-function VideoListing({
-
-})
-{
-    
-   const { videoList } = useVideoListing() 
-  return (
+function WatchLaterpage() {
+  const { setWatchLater,
+    watchLater,
+    addToWatchLater,
+    removeFromWatchLater } = useWatchLaterContext();
+    return (
       <>
-      <Navbar />
-      <div className='main-section-wrapper'>
-        <SideMenu />
-              <div class="hero-section-wrapper">
-              
-                    
-                
-                        <Chip 
-                           
-                            />
-      
-                  
-             
-                 
-            <div className='Video-listing'>
+        <Navbar />
+        <div className='main-section-wrapper'>
+          <SideMenu />
+          <div class="hero-section-wrapper">
+              <div className="main-section-heading-center">
+              Watch Later {watchLater.length}
+            </div>
+              <div className='Video-listing'>
                 {
-                    videoList.map((video) => (
+                    watchLater.map((video) => (
                         <Card key={video._id} title={video.title}
                             creator=
                             {video.creator}
@@ -53,12 +44,12 @@ function VideoListing({
                 </div>
 
 
-        </div>
-       </div>
-         
-     
-      </>
+
+          </div>          
+          </div>
+        
+            </>
   )
 }
 
-export default VideoListing 
+export default WatchLaterpage

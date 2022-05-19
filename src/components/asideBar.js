@@ -1,33 +1,19 @@
 import React from 'react'
-import { FaBars ,FaHome,FaHistory} from 'react-icons/fa';
-import { AiFillLike } from 'react-icons/ai';
-import { MdExplore,MdPlaylistPlay ,MdOutlineWatchLater,MdSlowMotionVideo } from 'react-icons/md';
-import Card from './Videocard';
 import CategoryCard from './categorisCard';
-import VideoListing from '../page/videoListing';
 import  HeroSection from'../components/heroSection'
 import CardFeature from './featureCard';
+import SideMenu from './SideMenu';
 function AsideBar() {
     return (
     <div class="main-hero-section">
-        <div class="side-menu-cotainer">
-            <ul className='aside-list-icons'>
-                <li className='icons-bar'> <FaHome/> </li>
-                <li className='icons-bar'> <MdExplore/></li>
-                <li className='icons-bar'> <MdPlaylistPlay /> </li>
-                <li className='icons-bar'> <MdOutlineWatchLater /> </li>
-                <li className='icons-bar'> <FaHistory/> </li>
-                <li className='icons-bar'> <AiFillLike /> </li>
-                <li className='icons-bar'> <MdSlowMotionVideo/> </li>
-            </ul>
-        </div>
-            <div class="hero-section-wrapper">
-                <  HeroSection/>
+                <SideMenu/>
+                <div class="hero-section-wrapper">
+                <HeroSection/>
                 <div>
                 <CategoryCard/>
                 </div>
                 <div className='card-section'>
-                    <CardFeature/>
+              
                 </div>
                 </div>
                 
