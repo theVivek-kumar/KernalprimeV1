@@ -14,9 +14,17 @@ function LikeVideoPage() {
         <div className='main-section-wrapper'>
           <SideMenu />
           <div class="hero-section-wrapper">
-              <div className="main-section-heading-center">
-              Watch Later {likeVideo.length}
+              <section className="cards">
+          <h3 className="main-section-heading">
+            <div className="main-section-heading-center">
+              All Liked Video {likeVideo.length}
             </div>
+            <div>
+              <button onClick={clearLikedVideos} className="btn btn-primary">
+                Clear All
+              </button>
+            </div>
+          </h3>
               <div className='Video-listing'>
                 {
                     likeVideo.map((video) => (
@@ -40,7 +48,8 @@ function LikeVideoPage() {
         ))
         
                 }
-                </div>
+            </div>
+            </section>
 
 
 
