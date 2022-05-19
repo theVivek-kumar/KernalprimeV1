@@ -1,35 +1,25 @@
 import React from 'react'
-import Chip from '../components/chipComponent'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
 import Card from '../components/Videocard'
-import { useVideoListing } from '../context/videoListingContext';
+import { UseLikeVideoContext } from '../context/LikeVideoContext'
 
-function VideoListing({
 
-})
-{
-    
-   const { videoList } = useVideoListing() 
+function LikeVideoPage() {
+    const { setLikeVideo, getLikeVideo, addToLikeVideo, removeFromLikeVideo, clearLikedVideos, likeVideo } = UseLikeVideoContext();
+    console.log(likeVideo,"this is like video")
   return (
       <>
-      <Navbar />
-      <div className='main-section-wrapper'>
-        <SideMenu />
-              <div class="hero-section-wrapper">
-              
-                    
-                
-                        <Chip 
-                           
-                            />
-      
-                  
-             
-                 
-            <div className='Video-listing'>
+           <Navbar />
+        <div className='main-section-wrapper'>
+          <SideMenu />
+          <div class="hero-section-wrapper">
+              <div className="main-section-heading-center">
+              Watch Later {likeVideo.length}
+            </div>
+              <div className='Video-listing'>
                 {
-                    videoList.map((video) => (
+                    likeVideo.map((video) => (
                         <Card key={video._id} title={video.title}
                             creator=
                             {video.creator}
@@ -53,12 +43,11 @@ function VideoListing({
                 </div>
 
 
-        </div>
-       </div>
-         
-     
+
+          </div>          
+          </div>
       </>
   )
 }
 
-export default VideoListing 
+export default LikeVideoPage

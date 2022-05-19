@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaBars,FaSearch} from 'react-icons/fa';
+import { FaBars, FaSearch, FaUserCircle } from 'react-icons/fa';
+import {BiLogInCircle } from 'react-icons/bi';
 function Navbar() {
 return (
     <nav className="navbar">
@@ -13,8 +14,8 @@ return (
                         <button className='Navbar-Search-section'><FaSearch/></button>
                     </div>
             <div className="navbar-side-section">
-            <div>User</div> 
-            <div>Login</div>  
+            <div><FaUserCircle/></div> 
+            <div><BiLogInCircle/></div>  
             </div>
         </div>
         
