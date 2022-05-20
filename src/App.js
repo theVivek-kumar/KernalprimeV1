@@ -1,6 +1,5 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import "./components/navbar.css"
 import './components/login/login.css'
 import './components/SignIn/SignIn.css'
 import LandingPage from "./page/landingPage";
@@ -26,7 +25,7 @@ function App() {
         <Route path='/watchLater' element={<AuthComp><WatchLaterpage /></AuthComp>} />
         <Route path='/historyPage' element={<AuthComp><HistoryPage /></AuthComp>} />
         <Route path='/likeVideo' element={<AuthComp><LikeVideoPage /></AuthComp>} />
-        <Route path='/playList' element={<AuthComp></AuthComp>} />
+        <Route path='/playList' element={<AuthComp><PlayList/></AuthComp>} />
         <Route path='/SignIn' element={<SignIn />} />
         <Route path='/LogIn' element={<Login />} />
       </Routes>
