@@ -8,12 +8,14 @@ import { VideoListingProvider } from './context/videoListingContext'
 import {HistoryProvider} from './context/Historycontext'
 import { WatchLaterProvider } from "./context/Watch-later";
 import { LikeVideoProvider } from "./context/LikeVideoContext";
+import {AuthProvider} from './context/AuthContex'
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <AuthProvider>
     <BrowserRouter>
       <LikeVideoProvider>
       <WatchLaterProvider>
@@ -25,6 +27,7 @@ ReactDOM.render(
         </WatchLaterProvider>
         </LikeVideoProvider>
       </BrowserRouter>
+      </AuthProvider>
     </React.StrictMode>,
   document.getElementById("root")
 );
