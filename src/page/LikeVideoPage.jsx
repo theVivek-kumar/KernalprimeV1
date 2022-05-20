@@ -20,7 +20,7 @@ function LikeVideoPage() {
               All Liked Video {likeVideo.length}
             </div>
             <div>
-              <button onClick={clearLikedVideos} className="btn btn-primary">
+              <button onClick={clearLikedVideos} className="btn-btn-primary">
                 Clear All
               </button>
             </div>
