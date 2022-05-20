@@ -1,12 +1,9 @@
 import axios from "axios";
 import { createContext, useContext, useState } from "react";
-
 const HistoryContext = createContext();
 const useHistoryContext = () => useContext(HistoryContext);
-
 const HistoryProvider = ({ children }) => {
 const [history, setHistory] = useState([]);
-
 async function getHistory() {
     try {
     const response = await axios({
@@ -25,7 +22,6 @@ async function getHistory() {
       console.error(error);
     }
   }
-
   async function addToHistory(video, setHistory) {
     try {
       const response = await axios({
@@ -44,7 +40,6 @@ async function getHistory() {
       console.error(error);
     }
   }
-
   async function removeFromHistory(videoId,setHistory) {
     try {
       const response = await axios({
@@ -62,7 +57,6 @@ async function getHistory() {
       console.error(error);
     }
   }
-
   async function clearHistory() {
     try {
       const response = await axios({
@@ -81,7 +75,6 @@ async function getHistory() {
       console.error(error);
     }
   }
-
   return (
     <HistoryContext.Provider
       value={{
@@ -97,5 +90,4 @@ async function getHistory() {
     </HistoryContext.Provider>
   );
 };
-
 export { useHistoryContext, HistoryProvider };

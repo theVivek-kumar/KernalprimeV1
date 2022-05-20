@@ -9,7 +9,7 @@ const SignIn = () => {
             <div className="container-login">
                 <div className="login-container-form">
                     
-                    <div className="login-Fp-header"><FcBusinessman/></div>
+                    <div className="login-Fp-header"><FcBusinessman  className='login-logo'/></div>
                     <label className="lable" for="input">FirstName</label>
                     <input className="input-lg" type="text" placeholder="Confirm-First-name" />
                     <label className="lable" for="input">LastName</label>
@@ -24,7 +24,7 @@ const SignIn = () => {
                         <input className="input-checkbox" type="checkbox" />
                         <h3 className='heading-signin'>I accept all the term & conditions</h3>
                     </div>
-                    <a className="Login-btn" href="#">Create New Account</a>
+                    <a className="Login-btn" >Create New Account</a>
                     <div className="login-create-acc">
                     <NavLink to="/login"><button  className='create-new-acc'>Already have an Account</button></NavLink> 
                     </div>

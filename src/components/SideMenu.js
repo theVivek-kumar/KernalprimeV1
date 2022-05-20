@@ -10,7 +10,7 @@ return (
     <div class="main-hero-section">
         <div class="side-menu-cotainer">
             <ul className='aside-list-icons'>
-                <li className='icons-bar'>  <NavLink to='/'><FaHome className='icon-md' /></NavLink><span className="aside-text">Home</span></li>
+                <li className='icons-bar'> <NavLink to='/'><FaHome className='icon-md' /></NavLink><span className="aside-text">Home</span></li>
                 <li className='icons-bar'>  <NavLink to='/videoListing'>< MdExplore  className='icon-md' /></NavLink><span className="aside-text">Explore</span></li>
                 <li className='icons-bar'><NavLink to='/historyPage'><FaHistory className='icon-md' /></NavLink><span className="aside-text">Hisory</span></li>
                 <li className='icons-bar'>  <NavLink to ='/likeVideo'><AiFillLike className='icon-md'/></NavLink><span className="aside-text">Like-Video</span></li>

@@ -391,7 +391,7 @@ transform: scale(1.02);
   background-color: var(--PRIMERY-COLOR);
   color: var(--WHITE)!important;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 5px;
   font-weight: 400;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -413,5 +413,20 @@ transform: scale(1.02);
   font-size: 3rem;
   background-color: var(--GRAY-80);
   color: var(--WHITE);
+  width: 20rem;
+  height: auto;
 
+}
+.playList-container-setion1{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+ 
+}
+.seperation-line-playlist{
+  background-color: var(--WHITE);
+  height: 1px;
+}
+.creatre-new-palylist{
+  display: flex;
 }
