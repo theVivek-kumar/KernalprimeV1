@@ -35,7 +35,7 @@
     width: 30rem;
     height: 4rem;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none!important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +69,16 @@
     justify-content: center;
     color: #444444;
 }
+.login-Fp-header{
+    display: flex;
+    justify-content: center;
+}
+.login-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #1d9bf0;
+}
 .heading-login{
     font-size: 2rem;
      color: #3b82f6;
@@ -96,7 +106,6 @@
 }
 .create-new-acc{
  border: none;
- color: #444444;
  background-color: #ffffff;
  font-weight: 400;
 }
@@ -120,4 +129,7 @@
 .heading-signin{
     font-size: 1.3rem;
     color: var(--GRAY-90);
+}
+.frg-paswrd{
+    font-size: .8rem;
 }

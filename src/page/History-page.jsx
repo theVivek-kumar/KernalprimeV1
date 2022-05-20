@@ -10,15 +10,15 @@ function HistoryPage() {
         addToHistory,
         removeFromHistory,
         clearHistory,
-       } = useHistoryContext();
+      } = useHistoryContext();
   console.log(history,"this is from history page")
   return (
     <div>
           <div className="body-section">
         <Navbar />
-         <div className='main-section-wrapper'>
+        <div className='main-section-wrapper'>
           <SideMenu />
-           <div class="hero-section-wrapper">
+          <div class="hero-section-wrapper">
         <section className="cards">
           <h3 className="main-section-heading">
             <div className="main-section-heading-center">
@@ -32,7 +32,7 @@ function HistoryPage() {
           </h3>
             <div className='Video-listing'>
                 
-             {history.map((video) => (
+            {history.map((video) => (
                         <CardHorizontal removeFunction={()=>{removeFromHistory(video._id,setHistory)}} key={video._id} title={video.title}
                             creator=
                             {video.creator}
@@ -48,7 +48,7 @@ function HistoryPage() {
                             watchLater={video.watchLater}
                             video_id={video.video_id}
                             />
-             ))}
+            ))}
               
           </div>
             </section>
