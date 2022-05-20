@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineCloseCircle } from "react-icons/Ai";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 function PlayList() {
   return (
     <div className="playList-container">

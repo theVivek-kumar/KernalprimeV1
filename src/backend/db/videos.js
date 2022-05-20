@@ -51,7 +51,7 @@ export const videos = [
 
     creator: "Code Evolution",
 
-    creater_img:'https://yt3.ggpht.com/ytc/AKedOLSASv4CCrVU31tCD0SQUb9UYkgYPddiB7tpCM4QGrA=s176-c-k-c0x00ffffff-no-rj',
+    creater_img:'https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s88-c-k-c0x00ffffff-no-rj',
 
     category: "React",
 

@@ -2,7 +2,8 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 import {useVideoListing} from "../context/videoListingContext"
 import { AiFillLike,AiFillDislike } from 'react-icons/ai';
-import { MdPlaylistPlay ,MdOutlineWatchLater} from 'react-icons/md';
+import { MdPlaylistPlay, MdOutlineWatchLater } from 'react-icons/md';
+import { RiBarChartHorizontalLine } from 'react-icons/ri';
 
 
 function MainArea() {
@@ -11,7 +12,7 @@ function MainArea() {
   const { videoList } = useVideoListing();
   const filteredVideo = videoList.filter((video) => video._id === videoId);
   const {
-   _id ,
+  _id ,
     old,
     views,
     title,
@@ -54,10 +55,95 @@ const videourl = `https://www.youtube.com/embed/${video_id}`;
           <div className="description" >
             <div className ="description">
               <div className="seperation-line">
-              </div >{description}</div></div>
-          </div>
+                </div >{description}</div></div>
+              <div className="seperation-line">
+                </div >
+            <div className='single-video-comments-section'>
+              <div className='comments-section'>536 comments<div>
+                <RiBarChartHorizontalLine />  short by
+              </div>
+              </div>
+            </div>
+            <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>
+              <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>  <div>
+           <div className='chennel-container' ><img className='chennel-logo-img' src={creater_img} ></img> <div>{ creator}</div> </div>  
+             <p className='comment-md'>You can also try turning off any adblockers you may have running. These sometimes interfere with comments and block them from loading.</p>
+           
+             <div className="single-video-icons">
+                <AiFillLike />
+                <AiFillDislike/>
+                
+              </div>
+            </div>
+            </div>
+          
+          
           
         </div>
+       
         
       </div>
     

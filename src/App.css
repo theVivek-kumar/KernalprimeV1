@@ -386,3 +386,21 @@ transform: scale(1.02);
   font-size: 4rem;
   color: var(--WHITE);
 }
+/********coments-section***********/
+.comments-section{
+  display: flex;
+  font-size: 2.3rem;
+  gap: 2rem;
+}
+.comment-md{
+  margin: 1rem;
+}
+/**********play_list**********/
+.playList-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  background-color: var(--GRAY-80);
+  color: var(--WHITE);
+
+}

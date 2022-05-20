@@ -12,6 +12,7 @@ import  HistoryPage  from "./page/History-page";
 import LikeVideoPage from "./page/LikeVideoPage";
 import SignIn from "./components/SignIn/SignIn";
 import Login from "./components/login/Login";
+import PlayList from "./components/PlayList";
 function App() {
   return (
     <div className="App">
@@ -23,7 +24,9 @@ function App() {
         <Route path='/historyPage' element={<HistoryPage />} />
         <Route path='/likeVideo' element={<LikeVideoPage />} />
         <Route path='/SignIn' element={<SignIn />} />
-        <Route path='/LogIn' element={<Login/>} />
+        <Route path='/LogIn' element={<Login />} />
+        <Route path='/playList' element={<PlayList />} />
+        
         
       </Routes>
       
