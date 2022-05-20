@@ -45,7 +45,6 @@ const videourl = `https://www.youtube.com/embed/${video_id}`;
                 </div>
               <div className="single-video-icons">
                 <AiFillLike />
-                <AiFillDislike/>
                 <MdPlaylistPlay />
                 <MdOutlineWatchLater/>
               </div>

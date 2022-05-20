@@ -41,7 +41,6 @@ function Card({
           <span className="duration-label">{duration} </span>
            <div className="single-video-icons">
                 <AiFillLike onClick={()=>{addToLikeVideo(videos, setLikeVideo)}} />
-                <AiFillDislike />
                 <MdPlaylistPlay />
             <MdOutlineWatchLater onClick={() => {addToWatchLater(videos, setWatchLater) 
             
