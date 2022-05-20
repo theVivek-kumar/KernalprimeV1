@@ -25,7 +25,7 @@ function HistoryPage() {
               Watch History {history.length}
             </div>
             <div>
-              <button onClick={clearHistory} className="btn btn-primary">
+              <button onClick={clearHistory} className="btn-btn-primary">
                 Clear All
               </button>
             </div>
