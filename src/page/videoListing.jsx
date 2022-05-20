@@ -12,21 +12,16 @@ function VideoListing({
     
    const { videoList } = useVideoListing() 
   return (
-      <>
-      <Navbar />
-      <div className='main-section-wrapper'>
+    <>
+    <Navbar />
+    <div className='main-section-wrapper'>
         <SideMenu />
-              <div class="hero-section-wrapper">
-              
-                    
-                
+            <div class="hero-section-wrapper">
+
                         <Chip 
-                           
+
                             />
-      
-                  
-             
-                 
+
             <div className='Video-listing'>
                 {
                     videoList.map((video) => (

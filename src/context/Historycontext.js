@@ -45,7 +45,7 @@ async function getHistory() {
     }
   }
 
-  async function removeFromHistory(videoId) {
+  async function removeFromHistory(videoId,setHistory) {
     try {
       const response = await axios({
         method: "DELETE",

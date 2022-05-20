@@ -1,7 +1,7 @@
 import React from 'react'
+import CardHorizontal from '../components/CardHorizontal'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
-import Card from '../components/Videocard'
 import { UseLikeVideoContext } from '../context/LikeVideoContext'
 
 
@@ -28,7 +28,7 @@ function LikeVideoPage() {
               <div className='Video-listing'>
                 {
                     likeVideo.map((video) => (
-                        <Card key={video._id} title={video.title}
+                        <CardHorizontal removeFunction={()=>{removeFromLikeVideo(video._id, setLikeVideo)}} key={video._id} title={video.title}
                             creator=
                             {video.creator}
                             _id={video._id}
