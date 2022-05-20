@@ -5,7 +5,7 @@ import { useAuthContext } from '../../context/AuthContex';
 function Login() {
   
   const navigate = useNavigate();
-  const ocation = useLocation();
+  const location = useLocation();
 
   const encodedToken = localStorage.getItem("token");
   const {
@@ -34,7 +34,8 @@ function Login() {
                 <h4>Remember me</h4>
                 <span  className="frg-paswrd"> Forgot your Password?</span>
               </div>
-            <NavLink to ='/'><button onClick={() =>
+          <NavLink to='/'>
+            <button onClick={() =>
             login(
               email,
               password,
@@ -44,7 +45,7 @@ function Login() {
             )
           } className="Login-btn">Login</button></NavLink>
               <div className="login-create-acc">
-              <NavLink to = "/SignIn"><button className='create-new-acc'>Create New Account</button></NavLink>
+              <NavLink to = "/signup"><button className='create-new-acc'>Create New Account</button></NavLink>
               </div>
               </div>
         </div>
