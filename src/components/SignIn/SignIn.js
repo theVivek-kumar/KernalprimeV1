@@ -22,7 +22,7 @@ const SignIn = () => {
                     <input className="input-lg" type="password" placeholder="Confirm-Password" />
                     <div className="input-check-btn">
                         <input className="input-checkbox" type="checkbox" />
-                        <h3>I accept all the term & conditions</h3>
+                        <h3 className='heading-signin'>I accept all the term & conditions</h3>
                     </div>
                     <a className="Login-btn" href="#">Create New Account</a>
                     <div className="login-create-acc">

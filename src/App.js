@@ -2,7 +2,8 @@ import "./App.css";
 // import MockAPI from './mockman/MockAPI'
 import { Routes, Route } from "react-router-dom";
 import "./components/navbar.css"
-import './components/SignIn/SignIn.css'
+import './components/login/login.css'
+import './components/SignIn/signIn.css'
 import LandingPage from "./page/landingPage";
 import SingleVideoPage from "./page/SingleVideoPage";
 import VideoListing from "./page/videoListing";
