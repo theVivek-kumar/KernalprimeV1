@@ -1,8 +1,8 @@
 import axios from "axios";
-import { createContext, useContext, useReducer,useState } from "react";
+import { createContext, useContext, useReducer, } from "react";
 const AuthContext = createContext();
 const useAuthContext = () => useContext(AuthContext);
-const ReducerAuth = (state, { type, payload }) => {
+const AuthReducer = (state, { type, payload }) => {
 switch (type) {
     case "EMAIL":
     return { ...state, email: payload };
@@ -24,7 +24,7 @@ switch (type) {
 }
 };
 const AuthProvider = ({ children }) => {
-const [authState, authDispatch] = useReducer(ReducerAuth, {
+const [authState, authDispatch] = useReducer(AuthReducer, {
     firstName: "",
     lastname: "",
     email: "",
@@ -49,7 +49,6 @@ const [authState, authDispatch] = useReducer(ReducerAuth, {
                 });
                 if (response.status === 201) {
                     localStorage.setItem("token", response.data.encodedToken);
-                    console.table("token", response);
                     navigate(location?.state?.from?.pathname, { replace: true })
                 }
             } else {
@@ -60,9 +59,10 @@ const [authState, authDispatch] = useReducer(ReducerAuth, {
         }
     }
     async function login(email, password, navigate, location, encodedToken) {
+        console.log("login")
         try {
             if (encodedToken) {
-                console.log("ALready loggedIN")
+                console.log("u are log in")
             }
             const response = await axios({
                 method: "POST",
@@ -72,7 +72,7 @@ const [authState, authDispatch] = useReducer(ReducerAuth, {
                     password: password,
                 },
             });
-            if (response.status === 200) {
+            if (true) {
                 localStorage.setItem("token", response.data.encodedToken);
                 navigate(location?.state?.from?.pathname, { replace: true })
             }
