@@ -26,7 +26,7 @@ function App() {
         <Route path='/historyPage' element={<AuthComp><HistoryPage /></AuthComp>} />
         <Route path='/likeVideo' element={<AuthComp><LikeVideoPage /></AuthComp>} />
         <Route path='/playList' element={<AuthComp><PlayList/></AuthComp>} />
-        <Route path='/SignIn' element={<SignIn />} />
+        <Route path='/signup' element={<SignIn />} />
         <Route path='/LogIn' element={<Login />} />
       </Routes>
       
