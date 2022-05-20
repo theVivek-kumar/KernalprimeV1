@@ -1,9 +1,8 @@
 
-import { AiOutlineHistory } from "react-icons/ai";
 import SideMenu from "../components/SideMenu";
 import Navbar from "../components/navbar";
 import { useHistoryContext } from '../context/Historycontext'
-import Card from "../components/Videocard";
+import CardHorizontal from "../components/CardHorizontal";
 
 
 function HistoryPage() {
@@ -34,7 +33,7 @@ function HistoryPage() {
             <div className='Video-listing'>
                 
              {history.map((video) => (
-                        <Card key={video._id} title={video.title}
+                        <CardHorizontal removeFunction={()=>{removeFromHistory(video._id,setHistory)}} key={video._id} title={video.title}
                             creator=
                             {video.creator}
                             _id={video._id}

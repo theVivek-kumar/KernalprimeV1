@@ -63,11 +63,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '931,849 views',
 
-    old: 'Jan 23, 2019',
+    old: 'dec 23, 2012',
 
-    duration: '2:06'
+    duration: '12:46'
   },
   
   {    _id: uuid(),
@@ -96,11 +96,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '2,934,567 views',
 
-    old: 'Jan 23, 2019',
+    old: '15 may, 2019',
 
-    duration: '2:06'
+    duration: '4:56'
   },
   {    _id: uuid(),
 
@@ -128,11 +128,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '7,576,859 views',
 
-    old: 'Jan 23, 2019',
+    old: 'Jan 23, 2014',
 
-    duration: '2:06'
+    duration: '34:36'
   },
   {    _id: uuid(),
 
@@ -160,11 +160,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '5,945,849 views',
 
-    old: 'Jan 23, 2019',
+    old: 'Jun 13, 2019',
 
-    duration: '2:06'
+    duration: '23:06'
   },
   {    _id: uuid(),
 
@@ -196,7 +196,7 @@ export const videos = [
 
     old: 'Jan 23, 2019',
 
-    duration: '2:06'
+    duration: '2:00'
   },
    {    _id: uuid(),
 
@@ -228,7 +228,7 @@ export const videos = [
 
     old: 'Jan 23, 2019',
 
-    duration: '2:06'
+    duration: '23:06'
   },
    {    _id: uuid(),
 
@@ -260,7 +260,7 @@ export const videos = [
 
     old: 'Jan 23, 2019',
 
-    duration: '2:06'
+    duration: '12:45'
   },
     {    _id: uuid(),
 
@@ -292,7 +292,7 @@ export const videos = [
 
     old: 'Jan 23, 2019',
 
-    duration: '2:06'
+    duration: '45:26'
   },
       {    _id: uuid(),
 
@@ -320,11 +320,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '3,931,833 views',
 
-    old: 'Jan 23, 2019',
+    old: 'Jan 21, 2016',
 
-    duration: '2:06'
+    duration: '4:06'
   },
        {    _id: uuid(),
 
@@ -352,11 +352,11 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '23,941,849 views',
 
-    old: 'Jan 23, 2019',
+    old: 'July 12, 2020',
 
-    duration: '2:06'
+    duration: '6:36'
   },
        {    _id: uuid(),
 
@@ -384,10 +384,10 @@ export const videos = [
 
     isLiked: false,
 
-    views: '7,931,849 views',
+    views: '931,849 views',
 
-    old: 'Jan 23, 2019',
+    old: 'Jan 23, 2020',
 
-    duration: '2:06'
+    duration: '5:56'
   },
 ];

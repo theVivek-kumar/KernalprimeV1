@@ -1,7 +1,7 @@
 import React from 'react'
+import CardHorizontal from '../components/CardHorizontal';
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
-import Card from '../components/Videocard';
 import { useWatchLaterContext } from '../context/Watch-later'
 
 function WatchLaterpage() {
@@ -15,13 +15,16 @@ function WatchLaterpage() {
         <div className='main-section-wrapper'>
           <SideMenu />
           <div class="hero-section-wrapper">
+             <section className="cards">
+          <h3 className="main-section-heading">
               <div className="main-section-heading-center">
               Watch Later {watchLater.length}
-            </div>
+                </div>
+                </h3>
               <div className='Video-listing'>
                 {
                     watchLater.map((video) => (
-                        <Card key={video._id} title={video.title}
+                        <CardHorizontal removeFunction={()=>{removeFromWatchLater(video._id, setWatchLater)}} key={video._id} title={video.title}
                             creator=
                             {video.creator}
                             _id={video._id}
@@ -41,7 +44,8 @@ function WatchLaterpage() {
         ))
         
                 }
-                </div>
+              </div>
+              </section>
 
 
 
