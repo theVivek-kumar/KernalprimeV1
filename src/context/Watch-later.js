@@ -1,7 +1,7 @@
 // import { RepeatOneSharp } from "@mui/icons-material";
 import axios from "axios";
 import { createContext, useContext, useState } from "react";
-
+import Toast from "../components/ToastComp";
 const WatchLaterContext = createContext();
 const useWatchLaterContext = () => useContext(WatchLaterContext);
 
@@ -33,10 +33,12 @@ const WatchLaterProvider = ({ children }) => {
       });
       if (response.status === 201) {
         setWatchLater(response.data.watchlater);
+         Toast({ type: "success", msg: "Video Added To Watchlater ..😎" });
         console.log(response.data.watchlater,"hey watchlater")
       }
     } catch (error) {
       console.error(error);
+      Toast({ type: "error", msg: error });
     }
   }
 
@@ -49,9 +51,11 @@ const WatchLaterProvider = ({ children }) => {
       });
       if (response.status === 200) {
         setWatchLater(response.data.watchlater);
+        Toast({ type: "info", msg: "Video Removed From Watchlater..🤫" });
       }
     } catch (error) {
       console.error(error);
+       Toast({ type: "error", msg: error });
     }
   }
   return (

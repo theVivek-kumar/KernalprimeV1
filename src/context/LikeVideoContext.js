@@ -1,10 +1,12 @@
 import axios from 'axios';
+import Toast from '../components/ToastComp';
 import { createContext, useState,useContext } from 'react'
 
 const LikeVideoContext = createContext();
 const UseLikeVideoContext = () => useContext(LikeVideoContext);
 const LikeVideoProvider = ({ children }) => {
-    const [likeVideo, setLikeVideo] = useState([]);
+  const [likeVideo, setLikeVideo] = useState([]);
+  
 
     async function getLikeVideo() {
         try {
@@ -31,10 +33,13 @@ const LikeVideoProvider = ({ children }) => {
                 data: { video: video },
             });
             if (response.status === 201) {
-                setLikeVideo(response.data.likes);
+              setLikeVideo(response.data.likes);
+              
+                Toast({ type: "success", msg: "You like this videos" });
             }
         } catch (error) {
-            console.log(error);
+          console.log(error);
+           Toast({ type: "error", msg: error });
             }
         }
           async function removeFromLikeVideo(videoId, setLikeVideo) {

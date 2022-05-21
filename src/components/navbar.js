@@ -17,8 +17,8 @@ return (
                         <button className='Navbar-Search-section'><FaSearch className='search-icon'/></button>
                     </div>
             <div className="navbar-side-section">
-            <div><NavLink to='/LogIn'><BiLogInCircle/></NavLink></div> 
-            <div >< FaUserCircle/></div>  
+            <div><NavLink to='/LogIn'><BiLogInCircle className='login-icon'/></NavLink></div> 
+            <div >< FaUserCircle className='login-icon'/></div>  
             </div>
         </div>
         

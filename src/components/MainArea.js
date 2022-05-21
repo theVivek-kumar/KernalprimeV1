@@ -1,15 +1,29 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
-import {useVideoListing} from "../context/videoListingContext"
+import { useVideoListing} from "../context/videoListingContext"
 import { AiFillLike,AiFillDislike } from 'react-icons/ai';
 import { MdPlaylistPlay, MdOutlineWatchLater } from 'react-icons/md';
 import { RiBarChartHorizontalLine } from 'react-icons/ri';
-
+import { usePlaylistContext } from '../context/PlayListContext'
+import { UseLikeVideoContext } from '../context/LikeVideoContext'
+import { useWatchLaterContext } from '../context/Watch-later'
+import PlayModel from './PlayModel';
 
 function MainArea() {
   
   const { videoId } = useParams();
   const { videoList } = useVideoListing();
+  const { toggleModal,
+    display,
+    setDisplay,
+    playlist,
+    setPlaylist,
+    addPlaylists,
+    removePlaylist,
+    getPlaylist,
+    getPlaylists,
+    removeFromPlaylist,
+    addToPlaylist, } = usePlaylistContext();
   const filteredVideo = videoList.filter((video) => video._id === videoId);
   const {
   _id ,
@@ -23,11 +37,17 @@ function MainArea() {
     description,
     thumbnailUrl,
   } = filteredVideo[0];
-  console.log(videoList ,"videolist")
+  console.log(videoList, "videolist")
+  const { addToLikeVideo, setLikeVideo } = UseLikeVideoContext()
+   const { setWatchLater,
+    watchLater,
+    addToWatchLater,
+    removeFromWatchLater } = useWatchLaterContext();
 
 const videourl = `https://www.youtube.com/embed/${video_id}`;
   return (
     <>
+      <PlayModel video={filteredVideo[0]}/>
       <div className='main-content-wrapper-singleVideo'>
         <div class="Card-main-wrapper singleVieo" >
         
@@ -44,9 +64,12 @@ const videourl = `https://www.youtube.com/embed/${video_id}`;
               </div>
                 </div>
               <div className="single-video-icons">
-                <AiFillLike />
-                <MdPlaylistPlay />
-                <MdOutlineWatchLater/>
+                <AiFillLike  onClick={() =>{
+                      addToLikeVideo(filteredVideo[0], setLikeVideo)}}/>
+                <MdPlaylistPlay onClick={toggleModal} />
+                <MdOutlineWatchLater onClick={() => {addToWatchLater(filteredVideo, setWatchLater) 
+            
+                }}/>
               </div>
           </div  >
           <div className="seperation-line"></div> 

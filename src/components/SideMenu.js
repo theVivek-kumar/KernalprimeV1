@@ -14,7 +14,7 @@ return (
                 <li className='icons-bar'>  <NavLink to='/videoListing'>< MdExplore  className='icon-md' /></NavLink><span className="aside-text">Explore</span></li>
                 <li className='icons-bar'><NavLink to='/historyPage'><FaHistory className='icon-md' /></NavLink><span className="aside-text">Hisory</span></li>
                 <li className='icons-bar'>  <NavLink to ='/likeVideo'><AiFillLike className='icon-md'/></NavLink><span className="aside-text">Like-Video</span></li>
-                <li className='icons-bar'>  <NavLink to='/'><MdPlaylistPlay className='icon-md' /></NavLink><span className="aside-text">Play-List</span></li>
+                <li className='icons-bar'>  <NavLink to='/playList'><MdPlaylistPlay className='icon-md' /></NavLink><span className="aside-text">Play-List</span></li>
                 <li className='icons-bar'>  <NavLink to = '/watchLater'><MdOutlineWatchLater className='icon-md'/></NavLink><span className="aside-text">Watch-Later</span></li>
                 
             </ul>

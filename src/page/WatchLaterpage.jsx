@@ -3,6 +3,7 @@ import CardHorizontal from '../components/CardHorizontal';
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
 import { useWatchLaterContext } from '../context/Watch-later'
+import { MdExplore,MdPlaylistPlay ,MdOutlineWatchLater } from 'react-icons/md';
 
 function WatchLaterpage() {
   const { setWatchLater,
@@ -17,7 +18,8 @@ function WatchLaterpage() {
           <div class="hero-section-wrapper">
              <section className="cards">
           <h3 className="main-section-heading">
-              <div className="main-section-heading-center">
+                <div className="main-section-heading-center">
+                  <MdOutlineWatchLater/>
               Watch Later {watchLater.length}
                 </div>
                 </h3>

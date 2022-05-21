@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Toast } from "../components/Toast/Toast";
+import Toast from "../components/ToastComp";
 import { createContext, useContext, useState } from "react";
 
 const PlaylistContext = createContext();
