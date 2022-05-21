@@ -7,7 +7,6 @@ const UseLikeVideoContext = () => useContext(LikeVideoContext);
 const LikeVideoProvider = ({ children }) => {
   const [likeVideo, setLikeVideo] = useState([]);
   
-
     async function getLikeVideo() {
         try {
             const response = await axios({
@@ -18,7 +17,7 @@ const LikeVideoProvider = ({ children }) => {
             });
             if (response.status === 200) {
                 setLikeVideo(response.data.like);
-                console.log(response.data.like, "this is like video");
+              
             }
         }catch (error) {
             console.error(error);  
