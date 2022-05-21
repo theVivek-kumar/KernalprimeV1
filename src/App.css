@@ -63,6 +63,12 @@
   font-size: 2.5rem;
   font-weight: 300;
 }
+.login-icon{
+ font-size: 2.8rem;
+ color: var(--WHITE);
+ display: flex;
+ align-items: center;
+}
 /************side-menu*************/
 .aside-list-icons{
 display: flex;
@@ -344,7 +350,7 @@ grid-template-columns: 17rem 1fr;
 /***********card-horizontal-container******************/
 .card-horizontal-container{
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   background-color: var(--GRAY-80);
   border-radius: 5px;
@@ -429,4 +435,212 @@ transform: scale(1.02);
 }
 .creatre-new-palylist{
   display: flex;
+}
+.image-md-2{
+  width: 40%;
+  height: auto;
+  padding: 4px;
+}
+.card-horizontal-container-1{
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.card-overlay {
+    background-color: #56b8e9a6;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card--image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.card--body {
+  padding: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  width: 100%;
+  height: auto;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.card--title {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  color: var(--GRAY-100);
+  display: flex;
+  justify-content: center;
+}
+
+/*****/
+.modal--container {
+  backdrop-filter: brightness(0.09);
+  position: fixed;
+  min-width: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2rem;
+  grid-gap: 2rem;
+  grid-gap: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 99;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: var(--GRAY-90);
+    color: var(--WHITE);
+    width: 23rem;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+  width: 22%;
+  height: auto;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  color: var(--BLACK-80);
+  font-weight: 400;
+  position: relative;
+  margin:4rem;
+  padding: .5rem;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.divider {
+  margin: 5px auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+}
+.img-fluid {
+  border-radius: 5px;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+}
+.input {
+    background-color: transparent;
+    border: none;
+    width: 20rem;
+    border-bottom: 2px solid var(--PRIMERY-COLOR);
+    color: white;
+    padding: 0rem 2rem 0.5rem 0.2rem;
+}
+.modal-content {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.label {
+  margin-bottom: -8px;
+  padding-top: 0.5rem;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.checkbox-input {
+  cursor: pointer;
+  display: flex;
+  grid-gap: 1rem;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: baseline;
+}
+
+.checkbox {
+  cursor: pointer;
+  accent-color: var(--PRIMERY-COLOR);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.playlist-name {
+  font-size: 1.5rem;
+}
+
+.btn-modal {
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  right: -14.3rem;
+  border: transparent;
+  background: transparent;
+  color: var(--WHITE)!important;
+  padding: 0.5rem 0;
+  transition: 1s;
+}
+
+.btn-modal:hover {
+  border-radius: 5px;
+  position: relative;
+  right: -14.1rem;
+  transition: 1s;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color:var(--PRIMERY-COLOR);
+  color: var(--GRAY-80);
+}
+
+.modal-title {
+  color:var(--PRIMERY-COLOR);
+  font-size: 1.6rem;
+}
+input{
+  font-size: 1.4rem;
+  color: var(--GRAY-100);
 }

@@ -4,16 +4,16 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useHistoryContext } from "../context/Historycontext";
 import {useWatchLaterContext} from '../context/Watch-later'
 function CardHorizontal({  _id,
-  title,
-  creator,
-  creater_img,
-  thumbnailUrl,
-  videos,
-  description,
-  video_id,
-  old,
-  removeFunction,
-  duration,
+title,
+creator,
+creater_img,
+thumbnailUrl,
+videos,
+description,
+video_id,
+old,
+removeFunction,
+duration,
     views, }) {
     console.log(_id)
     const navigate = useNavigate();

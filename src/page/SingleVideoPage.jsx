@@ -15,7 +15,7 @@ function SingleVideoPage() {
                 <div className='video-aside-list'>
                 {
                     videoList.map((video) => (
-                        <Card key={video._id} title={video.title}
+                        <Card  key={video._id} title={video.title}
                             creator=
                             {video.creator}
                             videos={video}

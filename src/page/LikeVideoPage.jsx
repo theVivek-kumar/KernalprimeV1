@@ -2,6 +2,7 @@ import React from 'react'
 import CardHorizontal from '../components/CardHorizontal'
 import Navbar from '../components/navbar'
 import SideMenu from '../components/SideMenu'
+import { AiFillLike } from 'react-icons/ai';
 import { UseLikeVideoContext } from '../context/LikeVideoContext'
 
 
@@ -10,13 +11,14 @@ function LikeVideoPage() {
     console.log(likeVideo,"this is like video")
   return (
       <>
-           <Navbar />
+          <Navbar />
         <div className='main-section-wrapper'>
           <SideMenu />
           <div class="hero-section-wrapper">
               <section className="cards">
           <h3 className="main-section-heading">
-            <div className="main-section-heading-center">
+              <div className="main-section-heading-center">
+                <AiFillLike/>
               All Liked Video {likeVideo.length}
             </div>
             <div>

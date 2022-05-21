@@ -1,6 +1,7 @@
 
 import SideMenu from "../components/SideMenu";
 import Navbar from "../components/navbar";
+import { FaHome, FaHistory } from 'react-icons/fa';
 import { useHistoryContext } from '../context/Historycontext'
 import CardHorizontal from "../components/CardHorizontal";
 
@@ -21,7 +22,8 @@ function HistoryPage() {
           <div class="hero-section-wrapper">
         <section className="cards">
           <h3 className="main-section-heading">
-            <div className="main-section-heading-center">
+                <div className="main-section-heading-center">
+                  <FaHistory/>
               Watch History {history.length}
             </div>
             <div>

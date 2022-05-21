@@ -10,8 +10,11 @@ import HistoryPage  from "./page/History-page";
 import LikeVideoPage from "./page/LikeVideoPage";
 import SignIn from "./components/SignIn/SignIn";
 import Login from "./components/login/Login";
-import PlayList from "./components/PlayList";
-import AuthComp from './components/Auth'
+import PlaylistPage from './page/Playlist'
+import AuthComp from './components/Auth';
+import { ToastContainer } from "react-toastify";
+import PlayModel from "./components/PlayModel";
+import  PlayListSingle from './page/PlayListSingle'
 
 function App() {
   return (
@@ -25,11 +28,14 @@ function App() {
         <Route path='/watchLater' element={<AuthComp><WatchLaterpage /></AuthComp>} />
         <Route path='/historyPage' element={<AuthComp><HistoryPage /></AuthComp>} />
         <Route path='/likeVideo' element={<AuthComp><LikeVideoPage /></AuthComp>} />
-        <Route path='/playList' element={<AuthComp><PlayList/></AuthComp>} />
+        <Route path='/playList' element={<AuthComp><PlaylistPage /></AuthComp>} />
+        <Route path='/playListSingle/:playlistId' element={<AuthComp>< PlayListSingle/></AuthComp>} />
         <Route path='/signup' element={<SignIn />} />
         <Route path='/LogIn' element={<Login />} />
+        <Route path='/playmodel' element={<PlayModel />} />
+
       </Routes>
-      
+       <ToastContainer position="top-right" />
     </div>
   );
 }
