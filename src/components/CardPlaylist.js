@@ -25,7 +25,7 @@ function CardPlaylist({ playlist }) {
         </div>
         <img
           onClick={() => {
-            navigate(`/singleVideoPage/${_id}`);
+            navigate(`/playListSingle/${_id}`);
           }}
           src={img}
           className="img-fluid"

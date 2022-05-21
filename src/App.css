@@ -350,7 +350,7 @@ grid-template-columns: 17rem 1fr;
 /***********card-horizontal-container******************/
 .card-horizontal-container{
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   background-color: var(--GRAY-80);
   border-radius: 5px;
@@ -523,7 +523,7 @@ transform: scale(1.02);
 
 .modal {
     border-radius: 5px;
-    background-color: var(--GRAY-80);
+    background-color: var(--GRAY-90);
     color: var(--WHITE);
     width: 23rem;
     padding: 1rem;

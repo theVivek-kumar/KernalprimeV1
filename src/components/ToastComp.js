@@ -12,7 +12,7 @@ function Toast({ msg, type }) {
         transition: Zoom,
         progress: undefined,
         type: type,
-        theme: "colored",
+        theme: "light",
         
   });
 }
