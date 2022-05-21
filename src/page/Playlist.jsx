@@ -5,7 +5,7 @@ import SideMenu from "../components/SideMenu";
 import { usePlaylistContext } from "../context/PlayListContext";
 
 function PlaylistPage() {
-  const { playlist, setPlaylist,removeFromPlaylist } = usePlaylistContext();
+  const { playlist, } = usePlaylistContext();
 
   return (
     <div>
