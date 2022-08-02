@@ -18,7 +18,7 @@ See the section about deployment for more information.
 ### `Sign-up`
 ### `Login`
 ### `Logout`
-# Getting Started with Create React App
+# Getting Started with Create React 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
