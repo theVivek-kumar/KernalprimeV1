@@ -53,6 +53,7 @@ function Card({
           </div>
           
           <div className="chennel-container">
+            <div>name</div>
             <img className="chennel-logo-img" src={creater_img}></img>
             <div>{creator}</div>
           </div>
