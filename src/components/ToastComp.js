@@ -5,6 +5,7 @@ function Toast({ msg, type }) {
     return toast(msg, {
         position: "top-right",
         autoClose: 4000,
+        fontSize:20,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

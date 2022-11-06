@@ -1,10 +1,10 @@
 *{
-    margin: 0;padding: 0;box-sizing: border-box;
+  margin: 0;padding: 0;box-sizing: border-box;
 }
 :root{
   --PRIMERY-COLOR:#1d9bf0 ;
   --WHITE: #ffffff;
-  --GRAY-80: #333333;
+  --GRAY-80: #2d2d2d;
   --GRAY-90: #222222;
   --GRAY-100:#212121;
   --GREY-60: #929191;
